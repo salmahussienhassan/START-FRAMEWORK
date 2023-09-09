@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
+
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
@@ -14,6 +15,7 @@ export class ContactComponent {
     // Set the title for this component/page
     this.titleService.setTitle('Contact');
   }
+
 
 name_exp:boolean=false;
 age_exp:boolean=false;

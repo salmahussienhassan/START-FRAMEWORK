@@ -10,8 +10,10 @@ import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { NavbarComponent } from './navbar/navbar.component';
+
 import { NotfoundComponent } from './notfound/notfound.component';
+import { FormsModule } from '@angular/forms';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -21,15 +23,17 @@ import { NotfoundComponent } from './notfound/notfound.component';
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
-    NavbarComponent,
-    NotfoundComponent
+   
+    NotfoundComponent,
+        NavComponent
   ],
   imports: [
     RouterModule.forRoot([]),
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
