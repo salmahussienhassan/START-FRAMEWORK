@@ -1,0 +1,34 @@
+<div class="contact my-5">
+    <div class="container ">
+
+        <h1 class="text-color text-center fw-bold">CONATCT SECTION</h1>
+        <div class="star my-4 d-flex justify-content-center align-items-center">
+            <div class="line"></div>
+            <i class="fa-solid fa-star text-color fw-bold  mx-3"></i>
+            <div class="line"></div>
+        </div>
+
+        <form class="w-50 m-auto">
+            <label [class.focus-class]="name_exp" for="name">Enter Your Name</label>
+           
+            <input (focus)="test($event)" id="name"  class="form-control my-3" placeholder="User Name" type="text">
+            
+            <label [class.focus-class]="age_exp" for="age">Enter Your Age</label>
+            <input (focus)="test($event)" id="age" class="form-control my-3" placeholder="User Age" type="number">
+            
+            <label [class.focus-class]="email_exp" for="email">Enter Your Email</label>
+            <input (focus)="test($event)" id="email" class="form-control my-3" placeholder="User Email" type="email">
+            
+            
+            <label [class.focus-class]="pass_exp" for="pass">Enter Your Password</label>
+            <input (focus)="test($event)" id="pass" class="form-control my-3" placeholder="User Password" type="password">
+
+            <button class="btn btn-info text-white my-3">Send Message</button>
+        </form>
+
+      
+
+
+    </div>
+</div>
+
