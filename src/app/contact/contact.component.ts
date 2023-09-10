@@ -15,27 +15,59 @@ export class ContactComponent {
     // Set the title for this component/page
     this.titleService.setTitle('Contact');
   }
-
-
+exp:boolean=false
+name:string=''
+age:string=''
+email:string=''
+pass:string=''
 name_exp:boolean=false;
 age_exp:boolean=false;
 email_exp:boolean=false;
 pass_exp:boolean=false;
 
+funcN(){
+  if(this.name !=''){
+   this.name_exp=true
 
 
-test(e:any){
-  if(e.target.type=='text')
- { this.name_exp= !this.name_exp;}
+  }
+  else{
+    this.name_exp=false
+  }
+}
 
- else if(e.target.type=='email')
- { this.email_exp= !this.email_exp;}
 
- else if(e.target.type=='number')
- { this.age_exp= !this.age_exp;}
+funcA(){
+  if(this.age !=''){
+   this.age_exp=true
 
- else
- { this.pass_exp= !this.pass_exp;}
+
+  }
+  else{
+    this.age_exp=false
+  }
+}
+
+funcE(){
+  if(this.email !=''){
+   this.email_exp=true
+
+
+  }
+  else{
+    this.email_exp=false
+  }
+}
+
+funcP(){
+  if(this.pass !=''){
+   this.pass_exp=true
+
+
+  }
+  else{
+    this.pass_exp=false
+  }
 }
 
 

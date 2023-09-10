@@ -11,17 +11,17 @@
         <form class="w-50 m-auto">
             <label [class.focus-class]="name_exp" for="name">Enter Your Name</label>
            
-            <input (focus)="test($event)" id="name"  class="form-control my-3" placeholder="User Name" type="text">
+            <input (keyup)="funcN()" [ngModelOptions]="{standalone: true}" [(ngModel)]="name"  id="name"  class="form-control my-3" placeholder="User Name" type="text">
             
             <label [class.focus-class]="age_exp" for="age">Enter Your Age</label>
-            <input (focus)="test($event)" id="age" class="form-control my-3" placeholder="User Age" type="number">
+            <input (keyup)="funcA()" [ngModelOptions]="{standalone: true}" [(ngModel)]="age" id="age" class="form-control my-3" placeholder="User Age" type="text">
             
             <label [class.focus-class]="email_exp" for="email">Enter Your Email</label>
-            <input (focus)="test($event)" id="email" class="form-control my-3" placeholder="User Email" type="email">
+            <input (keyup)="funcE()" [ngModelOptions]="{standalone: true}" [(ngModel)]="email" id="email" class="form-control my-3" placeholder="User Email" type="email">
             
             
             <label [class.focus-class]="pass_exp" for="pass">Enter Your Password</label>
-            <input (focus)="test($event)" id="pass" class="form-control my-3" placeholder="User Password" type="password">
+            <input (keyup)="funcP()" [ngModelOptions]="{standalone: true}" [(ngModel)]="pass" id="pass" class="form-control my-3" placeholder="User Password" type="password">
 
             <button class="btn btn-info text-white my-3">Send Message</button>
         </form>
